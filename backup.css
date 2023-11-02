@@ -1,0 +1,905 @@
+:root {                                                                                                                                                                       
+  --luka-purple:rgb(238, 195, 255);
+  --light-luka-purple:rgb(248, 226, 255);
+  --miku-gray:rgb(74, 72, 108);
+  --background-gray:rgb(166, 166, 166);
+  --dark-luka-purple: rgb(185, 118, 211);
+  --darker-luka-purple: rgb(174, 73, 214);
+}
+
+.display-none{
+  display:none;
+}
+
+* {
+  margin: 0;
+}
+
+#nav-logo{
+  width:25%;
+  margin-left:2%;
+}
+
+button:focus {
+  outline: none;
+}
+
+
+.big-red-button {
+  color: white;
+  background-color: red;
+  cursor: not-allowed;
+}
+/* ---------------------------------- NAVABR ---------------------------- */
+
+
+.navbar-wrapper {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color:var(--dark-luka-purple);
+  transition: color, background-color .15s ease-in-out, text-shadow .1s ease-in-out, transform .15s ease-in-out;
+}
+
+a:hover {
+  text-decoration: none;
+  text-shadow: 2.75px 1px var(--darker-luka-purple);
+  color:white;
+  transform: scale(110%);
+}
+
+
+.navbar-brand {
+  font-family:'Yuruka-UB';
+}
+
+.navbar {
+  background: var(--luka-purple);
+  font-size: 150%;
+  font-family:'PopHappiness-EB';
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+.navbar-nav{
+  justify-content: center;
+  width: 100%;
+  flex-direction: row;
+  
+}
+.nav-link{
+  padding-right:3.5rem !important;
+}
+
+/* ---------------------------------- GLOBAL FOR INPUTS ---------------------------- */
+
+/* Bottom Panel */
+.base {
+  background: #FFFFFF;
+  border-radius: 35px;
+}
+.active {
+  display: block;
+}
+
+.inactive{
+  display: none;
+}
+
+.back-button-wrapper {
+  position: absolute;
+  margin-top: 1%;
+  margin-left: 1%;
+}
+
+.back-img-hover{
+  display: none;
+}
+
+.back-img {
+  width: 13%;
+  height:13%;
+  transition: transform .3s ease-in-out;
+}
+
+.back-img:hover{
+  transform: scale(130%);
+}
+
+.page-background {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: var(--background-gray);
+  z-index: -1;
+  padding: 200 200 200 200;
+
+}
+
+[class^= "dialogue-box"] {
+  transform: scale(60%);
+  display: flex;
+  flex-direction: column;
+  padding: 15% 15% 4% 15%;
+  margin: -6% 15% 15% 15%;
+  background:linear-gradient(
+    var(--luka-purple) 0px,
+    var(--luka-purple) 100px,
+    white 100px,
+    white 100%
+  );
+  border-radius: 35px;
+}
+
+
+.base-accessories-wrapper{
+  margin-top: -35%;
+  margin-left: -35%;;
+  display: flex;
+  width:170%;
+  justify-content: space-between;
+}
+
+#base-accessories-left{
+  height:10%;
+  width:10%;
+  margin-top: .26%;
+}
+
+#base-accessories-right{
+  height:10%;
+  width:10%;
+  transform: rotate(180deg);
+}
+
+/* ---------------------------------- Top inputs and respective labels ---------------------------- */
+.top-dialogue {
+  width: 100%;
+  height: 100%;
+}
+
+.dialogue-box-marathon{
+  margin-top: -3.55%;
+}
+
+.top-label-wrapper {
+  display: flex;
+  flex-direction: row;
+  width:120%;
+  margin-top: 5%;
+  margin-left: -8%;
+}
+
+
+.top-input-wrapper {
+  display:inline-flex;
+  flex-direction: row;
+  justify-content:center;
+  width: 100%;
+  margin-bottom: 2%;
+  margin-top: 4%;
+  width: 130%;
+  margin-left: -12%;
+}
+
+.subheading-label-wrapper {
+  background: var(--miku-gray);
+  border-radius: 10px;
+  align-items: center;
+  width: 50%;
+  box-shadow: 2.5px 5px 4px var(--background-gray);
+  margin: 0 6%;
+} 
+
+.manager-name-selection {
+  width: 40%;
+  background: #FFFFFF;
+  border: 3px solid var(--miku-gray);
+  border-radius: 15px;
+  font-family: "MinchoPro-B";
+  padding: 1.2%;
+  height: 100%;
+  margin-right: 3%;;
+}
+
+.text-input-box {
+  width: 40%;
+  background: #FFFFFF;
+  border: 3px solid var(--miku-gray);
+  border-radius: 15px;
+  font-family: "MinchoPro-B";
+  height: 100%;
+  padding: 1%;
+  margin-left: 2%;
+}
+/* .manager-label {
+  margin-top: 5%;;
+} */
+
+.subheading-label-wrapper {
+  font-family: 'SkipPro-B';
+  font-style: normal;
+  font-size: 25px;
+  line-height: 30px;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 5%;
+  margin:0 !important;
+  cursor: default;
+}
+
+.border-wrapper img{
+  width: 100%;
+  margin: 1% 0%;
+}
+
+
+
+/* ---------------------------------- TEAM INPUTS ---------------------------- */
+.team-container {
+  height: 10%;
+  width: 100%;  
+  padding: 3% 0%;
+  margin-left: -10%;
+}
+
+.rounded-text-label {
+background: var(--luka-purple);
+border-radius: 35px;
+align-items: center;
+width: 60%;
+}
+
+.team-input-container {
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height:10%;
+  width:120%;
+  justify-content: space-between;
+}
+
+.label-txt {
+  font-family: 'SkipPro-B';
+  font-style: normal;
+  font-size: 25px;
+  line-height: 30px;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 3.5%;
+  margin:0 !important;
+  cursor: default;
+}
+
+.stat-input {
+  box-sizing: border-box;
+  width: 10%;
+  background: #FFFFFF;
+  border: 3px solid var(--miku-gray);
+  border-radius: 15px;
+  text-align: center;
+  font-family: "PopHappiness-EB";
+  font-size: 145%;
+}
+
+.submit-wrapper {
+  justify-content: center;
+  padding-top: 0%;
+  margin: 3% 25% -2% 25%;
+}
+
+.btn-shadow {
+  background-color:#e0e0e0;
+  width:100%;
+  height:130%;
+  justify-content: center;
+  border: 2px var(--miku-gray) solid;
+  align-items: center;
+  border-radius: 15px;
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+
+.submit-btn {
+  padding: 0;
+  box-sizing: border-box;
+  background-color: white;
+  border: none;
+  border-radius: 15px;
+  width:90%;
+  height:90%;
+  margin-left: 5%;
+  font-family: "PopHappiness-EB";
+  font-size: 200%;
+  cursor:pointer;
+  transition: color, background-color .3s ease-in-out, box-shadow .3s ease-in-out;
+}
+
+.submit-btn:hover{
+  background: var(--miku-gray);
+  color: white;
+}
+
+.k-div {
+  margin-left: -2%;
+  font-size: 225%;
+  font-family:"PopHappiness-EB";
+  cursor: default;
+}
+
+.stat-input::placeholder{
+  font-style: italic ;
+  color: rgb(175, 175, 175);
+}
+
+/* ---------------------------------- HOME PAGE ---------------------------- */
+.welcome-msg {
+  font-family:"SkipPro-B";
+  font-size: 100%;
+  text-align: center;
+}
+
+#cute-luka {
+  border-radius: 0%;
+}
+
+.community-msg {
+  font-family:"PopHappiness-EB"; 
+  font-size: 125%;
+  text-align: center;
+
+}
+
+/* ---------------------------------- ADMIN PAGE ---------------------------- */
+.dialogue-box-admin {
+  margin: -1.5% 15% 15% 15%;
+}
+
+.admin-wrapper{
+  margin-top: -20%;
+}
+
+.global-header{
+  width:100%;
+  height: 100%;
+  font-family:"Yuruka-UB";
+  color: var(--dark-luka-purple);
+  justify-content: center;
+  display: flex;
+  font-size: 200%;
+  margin-top: 6%;
+}
+
+.global-header p:hover{
+  transform: scale(150%);
+  cursor:default;
+}
+
+.admin-form {
+  height: 100%;
+  width: 150%;
+  display: flex;
+  flex-direction: row;
+  margin-top: 5%;
+  margin-left: -25%;
+}
+
+.password-group{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.email-group {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+}
+
+.email-label-wrapper, .password-label-wrapper {
+  align-items: center;
+  justify-content: space-between;
+}
+
+.border-admin{
+  width: 100%;
+  margin-top: 5%;;
+}
+
+/* ---------------------------------- SCHEDULE PAGE ---------------------------- */
+.hour-wrapper{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: -15%;
+  height:50vh;
+  width:50vw;
+}
+
+.hour-q-wrapper{
+  margin-top: 2%;
+  margin-bottom: 5%;
+}
+
+.hour-q{
+  margin-top: 10%;
+  font-family: 'SkipPro-B';
+  font-style: normal;
+  font-size: 250%;
+  color: var(--miku-gray);
+  text-align: center;
+  margin:0 !important;
+}
+
+.dialogue-box-hour{
+  margin-top: -3.1%;
+  align-items: center;
+}
+
+.dynamic-schedule-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top:2%;
+}
+
+.hour-input{
+  width:50%;
+  height:100%;
+  font-size: 220%;
+  box-sizing: border-box;
+  background: #FFFFFF;
+  border: 3px solid var(--miku-gray);
+  border-radius: 15px;
+  font-family: "MinchoPro-B";
+  text-align: center;
+}
+
+.hour-input-wrapper{
+  width:100%;
+  height:25%;
+  align-items: center;
+  justify-content: center;
+  display:flex;
+}
+
+.button-wrapper{
+  margin: 2.5% 5%;
+  width:50%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.hour-txt-wrapper {
+  background: var(--miku-gray);
+  border-radius: 35px;
+  width:10%;
+}
+
+.filler-wrapper{
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  width: 80%;
+  padding: .25%;
+}
+
+.filler-wrapper:nth-of-type(odd){
+  background: var(--luka-purple);
+  border-radius: 15px;
+}
+
+.hour-txt {
+  margin:0;
+}
+
+.filler-input{
+  box-sizing: border-box;
+  background: #FFFFFF;
+  border: 3px solid var(--miku-gray);
+  border-radius: 15px;
+  font-size: large;
+}
+
+.hour-txt {
+  font-family: 'SkipPro-B';
+  font-style: normal;
+  font-size: 15px;
+  line-height: 30px;
+  color: #FFFFFF;
+  text-align: center;
+  margin:0 !important;
+}
+
+.hour-btn{
+  box-sizing: border-box;
+  background-color: var(--luka-purple);
+  border: none;
+  color: white;
+  width: 40%;
+  height:20%;
+  border-radius: 15px;
+  border: 2px solid var(--miku-gray);
+  font-family: "PopHappiness-EB";
+  font-size: 250%;
+  cursor:pointer;
+  transition: color, background-color .3s ease-in-out, box-shadow .3s ease-in-out;
+  margin:2%;
+  
+}
+
+.schedule-submit, .schedule-load {
+  padding: 0;
+  box-sizing: border-box;
+  color: var(--dark-luka-purple);
+  background-color: var(--luka-purple);
+  border: none;
+  border-radius: 15px;
+  width:30%;
+  height:90%;
+  font-family: "PopHappiness-EB";
+  font-size: 200%;
+  cursor:pointer;
+  padding: 0% 5%;
+  margin: 0% 5%;
+  transition: color, background-color .3s ease-in-out, text-shadow .2s ease-in-out, transform .3s ease-in-out;
+}
+
+.schedule-missing{
+    padding: 0;
+    box-sizing: border-box;
+    background-color: var(--miku-gray);
+    border: none;
+    border-radius: 15px;
+    width:25%;
+    height:90%;
+    font-family: "PopHappiness-EB";
+    font-size: 200%;
+    cursor:pointer;
+    transition: color, background-color .3s ease-in-out, text-shadow .2s ease-in-out, transform .3s ease-in-out;
+    color:white;
+  }
+
+  .schedule-submit:hover, .schedule-load:hover{
+    color: white;
+    text-shadow: 3px 2px var(--darker-luka-purple);
+    transform: scale(105%);
+  }
+  .schedule-missing:hover{
+    text-shadow: 2px 2px var(--dark-luka-purple);
+    transform: scale(105%);
+  }
+
+  .fillers-per-hour {
+    color: white;
+  }
+
+  .needed-filler-subheading{
+    color: var(--light-luka-purple);
+    margin-top: -4%;
+  }
+
+  .needed-filler-wrapper{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--miku-gray);
+    border-radius: 35px;
+    padding: 1%;
+  }
+
+  .filler-note {
+    color: white;
+    margin-top: 6%;
+    text-align: center;
+  }
+
+  .fillers-header.global-header{
+    margin-top:0%;
+  }
+
+/* ---------------------------------- LANDING PAGE ---------------------------- */
+
+.landing-page{
+  display: flex;
+  width:80%;
+  height:100%;
+  margin:auto;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.landing-submit {
+  margin-top: 15%;;
+}
+
+.dialogue-box-landing{
+    padding: 5% 15% 10% 15%;
+    margin: -2.65% 15% 15% 15%;
+    border-radius: 35px;
+    align-items: center;
+    justify-content: center;
+
+}
+
+  .landing-accessories{
+    margin-top:12.5%;
+  }
+
+  .runner-input-wrapper{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width:50%;
+    justify-content: space-between;
+  }
+
+  .runner-submit-wrapper {
+    justify-content: center;
+    padding-top: 10%;
+    margin: 0% 25% 0%  25%;
+  }
+  
+.global-header{
+  font-family: 'Yuruka-UB';
+  color:var(--luka-purple);
+  text-shadow: 5px 2px var(--dark-luka-purple);
+
+
+}
+  .runner-submit-button{
+    padding: 0;
+  box-sizing: border-box;
+  background-color: white;
+  border: none;
+  border-radius: 15px;
+  width:90%;
+  height:90%;
+  margin-left: 5%;
+  font-family: "PopHappiness-EB";
+  font-size: 200%;
+  cursor:pointer;
+  transition: color, background-color .3s ease-in-out, box-shadow .3s ease-in-out;
+  }
+  .runner-btn-shadow {
+    background-color:#e0e0e0;
+    width:100%;
+    height:130%;
+    justify-content: center;
+    border: 2px var(--miku-gray) solid;
+    align-items: center;
+    border-radius: 15px;
+    padding-top: 2%;
+    padding-bottom: 2%;
+  }
+  
+  .runner-submit-button:hover{
+    background: var(--miku-gray);
+    color: white;
+  }
+  
+  .miku{
+    border-radius: 20px;
+    transform-origin: 30% 100%;
+    cursor: default;
+    width:100%;
+    margin-bottom: -20%;
+    margin-left: 10%;
+  }
+
+/* ---------------------------------- Landing page successful teams ---------------------------- */
+
+.top-success-div{
+  display: flex;
+  background-color: var(--background-gray);
+  width:100%;
+}
+
+.wrapper-successful-teams{
+  display: flex;
+  width: 80%;
+  flex-direction: column;
+  margin: auto;
+  background-color: var(-luka-pink);
+}
+
+[class^="successful-team"]{
+  display: flex;
+  width: 100%;
+}
+
+[class^="successful-filler"]{
+  color:var(--darker-luka-purple);
+  text-shadow: 1px 1px var(--darker-luka-purple);
+  width:100%;
+  margin: 0% 2%;
+}
+
+.filler-wrapper, [class^="successful-filler"]{
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  width: 100%;
+  padding: .25%;
+}
+
+.filler-wrapper:nth-of-type(odd), [class^="successful-team"]:nth-of-type(even){
+  background: var(--luka-purple);
+  border-radius: 15px;
+}
+
+.hour-txt-mod {
+  font-family: 'SkipPro-B';
+  font-style: normal;
+  font-size: 15px;
+  line-height: 30px;
+  color: #FFFFFF;
+  text-align: center;
+  margin:0 !important;
+}
+
+[class^="filler-name"]{
+  padding: .5%;
+}
+
+.welcome-wrapper{
+  display:flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: center;
+  align-items:flex-end;
+  margin-bottom: 8%;
+}
+
+
+
+/* ---------------------------------DATA----------------------------------------*/
+.dialogue-box-data{
+  margin-top: .8%;
+}
+.edit-btn-wrapper{
+  margin-left:85%;
+  padding-top:2%;
+  padding-bottom:1%;
+}
+.edit-user-btn {
+  box-sizing: border-box;
+  background-color: white;
+  border: none;
+  border-radius: 15px;
+  width:90%;
+  height:90%;
+  margin-left: 5%;
+  font-family: "PopHappiness-EB";
+  font-size: 90%;
+  cursor:pointer;
+  transition: color, background-color .3s ease-in-out, box-shadow .3s ease-in-out;
+}
+
+.edit-btn-shadow{
+    background-color:#e0e0e0;
+    width:30%;
+    height:20%;
+    justify-content: center;
+    border: 2px var(--miku-gray) solid;
+    align-items: center;
+    align-items: center;
+    border-radius: 15px;
+    padding: .2%;
+}
+
+.table-wrapper{
+  display: flex;
+  flex-direction: column;
+  width:100%;
+  height:100%;
+}
+
+table{
+    border-spacing: 0;
+    background-color: transparent;
+    height: 100%;
+    width: 80%;
+    text-align: center;
+    margin:auto;
+}
+
+.tbody-edit-state{
+  align-items: center;
+  margin:auto;
+}
+
+.tbody-edit-state input{
+  width: 15%;
+  background: #FFFFFF;
+  border: 3px solid var(--miku-gray);
+  border-radius: 15px;
+  font-family: "MinchoPro-B";
+  height: 100%;
+  padding: 1%;
+  margin-left: 2%;
+}
+
+tr {
+  height: 45px;
+}
+
+thead{
+  background:var(--miku-gray);
+  color: var(--light-luka-purple);
+  font-size: 175%;
+  font-family: "PopHappiness-EB";
+}
+
+tbody{
+  font-family:"SkipPro-B";
+}
+.loading-msg{
+  margin: auto;
+  margin-top: 15%;
+}
+tbody tr:nth-of-type(odd){
+  background-color: var(--luka-purple);
+  color:var(--dark-luka-purple)
+}
+
+tbody tr:nth-of-type(even){
+  background-color: var(--light-luka-purple);
+  color: var(--darker-luka-purple)
+}
+
+
+
+.userdata-btn{
+  margin-top:-12%;
+}
+
+/*-----------------------------------------HELP PAGES---------------------------------*/
+.user-help-wrapper{
+  margin-top:-20%;
+}
+.user-help {
+  font-size: 120%;
+}
+/*                                    IMPORTED FONTS                                */
+
+
+/* Bold, more handwrite-like, good for page headings? */
+@font-face {
+  font-family: 'PopHappiness-EB';
+  src: local('FOT-PopHappinessStd-EB'), url(./fonts/FOT-PopHappinessStd-EB.ttf) format('truetype');
+}
+
+/* The most generic. Sans serif, not interesting */
+@font-face {
+  font-family: 'Rodin-DB';
+  src: local('FOT-RodinNTLGPro-DB'), url(./fonts/FOT-RodinNTLGPro-DB.ttf) format('truetype');
+}
+
+/* Semi-bold comparatively, straigh lines with a small bit of calligraphy filling */
+@font-face {
+  font-family: 'SkipPro-B';
+  src: local('FOT-SkipProN-B'), url(./fonts/FOT-SkipProN-B.ttf) format('truetype');
+}
+
+/* Bold, same as SkipProN but bolder, a bit generic */
+@font-face {
+  font-family: 'MinchoPro-B';
+  src: local('FOT-UDMinchoPro-B'), url(./fonts/FOT-UDMinchoPro-B.ttf) format('truetype');
+}
+
+/* Ultra bold, blocky, good for site heading */
+@font-face {
+  font-family: 'Yuruka-UB';
+  src: local('FOT-YurukaStd-UB'), url(./fonts/FOT-YurukaStd-UB.ttf) format('truetype');
+}
