@@ -544,7 +544,7 @@ export function Admin() {
 	 */
 	function login() {
 		if (passInput !== "" && usernameInput !== "") {
-			const url = `http://localhost:8080/account/login/`;
+			const url = `https://api.StarDash.ca/account/login/`;
 			let loginObject = { manager: usernameInput, password: passInput };
 			(async () => {
 				const response = await fetch(url, {
@@ -570,7 +570,7 @@ export function Admin() {
 						event: fetchedEvents.eventList[0].event,
 						leadManager: fetchedEvents.eventList[0].leadManager,
 					};
-					const url = `http://localhost:8080/return/context/`;
+					const url = `https://api.StarDash.ca/return/context/`;
 					const responseCtx = await fetch(url, {
 						method: "POST",
 						mode: "cors",
@@ -636,7 +636,7 @@ export function Admin() {
 	}
 
 	function getEventNames() {
-		const url = `http://localhost:8080/return/event/names/with/type`;
+		const url = `https://api.StarDash.ca/return/event/names/with/type`;
 		(async () => {
 			const response = await fetch(url, {
 				method: "POST",
