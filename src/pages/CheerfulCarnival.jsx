@@ -33,7 +33,7 @@ export function CheerfulCarnival() {
 	useEffect(
 		() =>
 			async function grabTeams() {
-				const url = `http://localhost:8080/return/event/names/with/type`;
+				const url = `https://api.StarDash.ca/return/event/names/with/type`;
 				const res = await fetch(url, {
 					method: "POST",
 					mode: "cors",
