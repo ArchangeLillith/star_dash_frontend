@@ -54,8 +54,6 @@ Here's how:
 
 ### Built With
 
-This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
-
 * React
 * Javascript
 * Linked with a MongoDB and Node backend
@@ -77,11 +75,13 @@ A web browser, preferably Chrome
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
-
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
 
 I'd like to thank Elivaras and Kris for helping me through this project and giving me wonderful feedback as to how to make it more user friendly and run smoothly. 
+
+## Image Gallery
+![Home-Page](https://github.com/ArchangeLillith/star_dash_frontend/blob/main/Home_Page.png)
+![Example-Schedule-Page](https://github.com/ArchangeLillith/star_dash_frontend/blob/main/Example-Schedule-Page.png)
 
 
