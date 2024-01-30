@@ -64,6 +64,8 @@ This section should list any major frameworks/libraries used to bootstrap your p
 
 * React
 * Javascript
+* Linked with a MongoDB and Node backend
+
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
